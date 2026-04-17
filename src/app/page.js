@@ -1,4 +1,18 @@
-
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "@/components/ui/avatar"
+import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardAction,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 import Image from "next/image";
 import calendar from "./img/calendar.png"
 import faltas from "./img/faltas.png"
@@ -8,6 +22,7 @@ import notebook from "./img/notebook.png"
 import cesar from "./img/Cesar.png"
 import vitor from "./img/vitor.png"
 import linkedin from "../components/img/linkedin.png"
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-linear-to-b from-[#FEFEFD] to-[#a8cef4]">
@@ -22,18 +37,21 @@ export default function Home() {
 
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row mt-5">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#3FA0FF] px-5 text-background transition-colors hover:bg-[#fcfcfe] hover:text-[#3FA0FF] md:w-39.5"
-            href="https://localhost:3000"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+        <Link href="/login">
+          <div className="flex flex-col gap-4 text-base font-medium sm:flex-row mt-5">
 
-            Começe Agora
-          </a>
+            <a
+              className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-[#3FA0FF] px-5 text-background transition-colors hover:bg-[#fcfcfe] hover:text-[#3FA0FF] md:w-39.5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
 
-        </div>
+              Começe Agora
+            </a>
+
+
+          </div>
+        </Link>
 
         <div className=" h-full   w-7xl mt-15 flex flex-row justify-between">
           <div className="h-50 w-100  p-3 flex flex-col justify-center">
@@ -108,7 +126,7 @@ export default function Home() {
             />
             <div className="mt-2 items-center flex flex-col">
               <h1 className="font-extrabold text-2xl">Vitor Hugo</h1>
-              <p> Tecnico em iformática - IFMS</p>
+              <p> Tecnico em informática - IFMS</p>
 
             </div>
             <div className=" h-10 flex flex-row items-center">
@@ -133,7 +151,7 @@ export default function Home() {
             />
             <div className="mt-2 items-center flex flex-col">
               <h1 className="font-extrabold text-2xl">César Augusto</h1>
-              <p> Tecnico em iformática - IFMS</p>
+              <p> Tecnico em informática - IFMS</p>
 
             </div>
             <div className=" h-10 flex flex-row items-center">
@@ -155,10 +173,11 @@ export default function Home() {
         <div className="mt-10">
           <h1 className="font-extrabold text-4xl">FeedBacks :<span className="text-2xl">P</span></h1>
         </div>
-        <div className="bg-amber-50 w-7xl h-full flex flex-row">
-         <div className="w-100 ">
-     
-         </div>
+        <div className=" mt-5 justify-between w-7xl h-full flex flex-wrap gap-2">
+
+          
+
+
         </div>
       </main>
     </div>

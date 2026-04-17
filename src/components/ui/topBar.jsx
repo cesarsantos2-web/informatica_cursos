@@ -25,10 +25,10 @@ function TopBar() {
 
                     <Button variant="outline" className={"w-20 h-12 bg-[#2C2C2C] border=[#1B1B1B] text-[#fcfcfe]"}><Link href="/login">Login</Link></Button>
 
-                    <Button variant="outline" className={"w-30 h-12 bg-[#3FA0FF] border=[#16395C] text-[#16395C]"}><Link href="/cadastro">Cadastre-se</Link></Button>
+                    <Button variant="outline" className={"w-30 h-12 bg-[#3FA0FF] border=[#16395C] text-[#16395C]"}><Link href="/signup">Cadastre-se</Link></Button>
                 </div>
             </header>
-        </div>
+        </div>  
 
 
     )
