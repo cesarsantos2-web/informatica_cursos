@@ -8,6 +8,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import Link from "next/link";
 
 export function SignupForm() {
   return (
@@ -53,6 +54,7 @@ export function SignupForm() {
           <FieldDescription>Por favor, confirme sua senha.</FieldDescription>
         </Field>
         <Field>
+          <FieldDescription>Caso já possua uma conta <Link href={'/login'}><span className="text-[#3FA0FF]">Faça Login.</span></Link></FieldDescription>
           <Button type="submit" className={"bg-[#3FA0FF]"}>Crie sua conta</Button>
         </Field>
        

@@ -8,6 +8,7 @@ import {
   FieldSeparator,
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
+import Link from "next/link";
 
 export function LoginForm({
   className,
@@ -39,6 +40,7 @@ export function LoginForm({
           <Input id="password" type="password" required className="bg-background" />
         </Field>
         <Field>
+          <FieldDescription>Ainda não possui uma conta ? <Link href={'/signup'}><span className="text-[#3FA0FF]">Crie já.</span></Link></FieldDescription>
           <Button type="submit" className={"bg-[#3FA0FF]"}>Login</Button>
         </Field>
 

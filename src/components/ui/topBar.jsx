@@ -7,8 +7,8 @@ import Image from "next/image";
 import logo from '../img/chat.png'
 function TopBar() {
     return (
-        <div>
-            <header className="h-[80] flex justify-between items-center bg-[#fcfcfe00] border ">
+        <div className="fixed w-full backdrop-blur-sm">
+            <header className="h-[80] flex justify-between items-center bg-[#fcfcfe00]">
                 <div className=" flex  flex-row" >
                     <div className="w-60  flex content-center ">
                         <Link href="/"><Image
